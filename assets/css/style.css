@@ -81,10 +81,9 @@ p {
 #connectbox {
 	background-color: #ffffff;
 	margin-left: 15px;
-	position: absolute;
-	right: 0;
-	top: 0;
 	display: inline-block;
+	padding: 15px;
+	border: 1px solid #dddddd;
 }
 
 h3 {
@@ -117,10 +116,30 @@ footer {
     width: 100%;
 }
 
-.portfoliotitle {
+.portfolioentries {
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	color: #ffffff;
-	background-color: #4aaaa5;
+	text-align: center;
+	width: 250px;
+	height: 150px;
+	color: blue;
+	float: left;
 	position: relative;
-	width: 50%;
+	left: 0;
+	bottom: 0;
+
+}
+#hangman {
+	float: left;
+}
+#rpggame {
+	float: right;
+}
+#triviagame {
+	float: left;
+}
+#rutgers {
+	float: right;
+}
+#rockpaper {
+	float: left;
 }
