@@ -17,9 +17,18 @@ body {
 header {
 	background-color: #ffffff;
 	width: 100%;
+	height: 68px;
 	margin-bottom: 25px;
 	border-bottom: 1px solid #dddddd;
 	display: inline-block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#headercontent {
+	max-width: 960px;
 }
 
 #content {
@@ -36,6 +45,7 @@ h1 {
 	width: 270px;
 	padding: 20px;
 	display: inline-block;
+	
 }
 
 nav {
@@ -54,7 +64,8 @@ section {
 	clear: both;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
-	max-width: 650px;
+	width: 650px;
+	margin-top: 83px;
 	display: inline-block;
 }
 
@@ -84,6 +95,8 @@ p {
 	display: inline-block;
 	padding: 15px;
 	border: 1px solid #dddddd;
+	float: right;
+	margin-top: 83px;
 }
 
 h3 {
@@ -116,7 +129,7 @@ footer {
     width: 100%;
 }
 
-.portfolioentries {
+.portfolioentries { /*this is for the p's i had before in the portfolio section. may want it for reference*/
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	text-align: center;
 	width: 250px;
@@ -142,4 +155,32 @@ footer {
 }
 #rockpaper {
 	float: left;
+}
+
+form {
+	padding: 20px;
+	max-width: 100%;
+	line-height: 200%;
+	font-size: 18px;
+}
+
+input {
+	width: 100%;
+	height: 30px;
+	background-color: #dddddd;
+	font-size: 15px;
+}
+
+#messagebox {
+	height: 300px;
+	overflow: scroll;
+}
+
+#submitbutton {
+	width: 33%;
+	background-color: #4aaaa5;
+	font-size: 18px;
+	margin-top: 10px;
+	color: #ffffff;
+	font-weight: bold;
 }
