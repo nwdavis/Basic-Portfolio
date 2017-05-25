@@ -186,7 +186,7 @@ textarea {
 
 #messagebox {
 	height: 300px;
-	overflow: scroll;
+	overflow: auto;
 	resize: none;
 }
 
