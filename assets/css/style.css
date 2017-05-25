@@ -11,6 +11,7 @@ body {
 	background-image: url("../images/topography.png");
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
+	width: 960px;
 	margin: 0 0 80px; /* bottom = footer height */
 }
 
@@ -29,11 +30,13 @@ header {
 
 #headercontent {
 	max-width: 960px;
+	position: relative;
+	left: 13.5%;
 }
 
 #content {
-	max-width: 960px;
-	margin: 0 auto;
+	position: relative;
+	left: 37.2%;
 }
 
 h1 {
@@ -44,12 +47,15 @@ h1 {
 	color: #ffffff;
 	width: 270px;
 	padding: 20px;
+	position: relative;
+	left: 100px;
 	display: inline-block;
-	
 }
 
 nav {
-	float: right;
+	position: relative;
+	bottom: 60px;
+	left: 112px;
 }
 
 .navlinks {
@@ -64,16 +70,22 @@ section {
 	clear: both;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
-	width: 650px;
 	margin-top: 83px;
+	margin-bottom: 120px;
+	display: inline-block;
+	float: left;
+}
+#leftbox {
+	width: 650px;
 	display: inline-block;
 }
 
 h2 {
 	color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
+	margin: 15px;
 	border-bottom: 2px solid #dddddd;
 	padding: 20px;
 }
@@ -95,22 +107,45 @@ p {
 	display: inline-block;
 	padding: 15px;
 	border: 1px solid #dddddd;
-	float: right;
-	margin-top: 83px;
+	position: absolute;
+	right: 0;
+	top: 83px;
+	
 }
 
 h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-weight: bold;
-	font-size: 18px;
-	padding-bottom: 20px;
-	margin: 15px;
+	font-size: 24px;
+	text-align: center;
+	width: 250px;
+	padding: 20px;
 	border-bottom: 2px solid #dddddd;
 }
 
+.pfheader {
+	color: #ffffff;
+	background-color: #4aaaa5;
+	position: relative;
+	bottom: 75px;
+	font-size: 15px;
+
+}
+
+.portfolioentries {
+	text-decoration: none;
+	margin: 25px 25px 20px 40px;
+	width: 250px;
+	height: 250px;
+	float: left;
+
+}
+
 #sociallinks {
+	clear: both;
 	padding: 10px;
+	text-align: center;
 }
 
 footer {
@@ -129,34 +164,6 @@ footer {
     width: 100%;
 }
 
-.portfolioentries { /*this is for the p's i had before in the portfolio section. may want it for reference*/
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	text-align: center;
-	width: 250px;
-	height: 150px;
-	color: blue;
-	float: left;
-	position: relative;
-	left: 0;
-	bottom: 0;
-
-}
-#hangman {
-	float: left;
-}
-#rpggame {
-	float: right;
-}
-#triviagame {
-	float: left;
-}
-#rutgers {
-	float: right;
-}
-#rockpaper {
-	float: left;
-}
-
 form {
 	padding: 20px;
 	max-width: 100%;
@@ -170,10 +177,17 @@ input {
 	background-color: #dddddd;
 	font-size: 15px;
 }
+textarea {
+	width: 100%;
+	height: 30px;
+	background-color: #dddddd;
+	font-size: 15px;
+}
 
 #messagebox {
 	height: 300px;
 	overflow: scroll;
+	resize: none;
 }
 
 #submitbutton {
